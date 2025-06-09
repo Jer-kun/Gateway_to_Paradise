@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fefae0; /* Light sand/beach background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #8B0000; /* Deep red for headers */
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e63946;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1d3557;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Administrator Panel</h1>
+
+        <form action="admin_upload.php" method="post" enctype="multipart/form-data">
+            <label for="imageUpload">Upload Image</label>
+            <input type="file" name="image" id="imageUpload" accept="image/*">
+
+            <label for="link">Enter Link (optional)</label>
+            <input type="text" name="link" id="link" placeholder="https://example.com">
+
+            <label for="updateText">Enter Text/Update</label>
+            <textarea name="updateText" id="updateText" placeholder="Write your update here..."></textarea>
+
+            <input type="submit" value="Submit All">
+        </form>
+
+        <a class="back-link" href="1. title_menu.html">← Back to Mainframe</a>
+    </div>
+</body>
+</html>

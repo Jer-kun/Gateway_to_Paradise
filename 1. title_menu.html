@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway To Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('title_menu_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: beige;
+        }
+
+        .admin-top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .admin-top-right a {
+            background-color: #8B0000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .admin-top-right a:hover {
+            background-color: #FF4500;
+            color: #000;
+            text-shadow: 0 0 5px #FFD700;
+        }
+
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(220, 255, 220, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            outline: 1px solid gray;
+        }
+
+        .header {
+            padding: 20px;
+            border: 2px solid orange;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: orange;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .header h2 {
+            color: black;
+            margin: 5px 0 0;
+            font-size: 1em;
+        }
+
+        .question {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            background-color: orange;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background-color: darkorange;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Admin Button at Top Right -->
+    <div class="admin-top-right">
+        <a href="admin.html">Admin</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>WELCOME TO THE PORT OF ROXAS</h1>
+            <h2>Gateway to Paradise that leads to the best destinations nearby!</h2>
+        </div>
+        <div class="question">
+            <strong>What is your encounter of visit to the port right now?</strong>
+        </div>
+        <div class="buttons">
+            <a href="2. departure.html">To Departure (Entering)</a>
+            <a href="3. arrival.html">On Arrival (Exiting)</a>
+            <a href="4. guest.html">As Guest (Frequenting)</a>
+        </div>
+    </div>
+</body>
+</html>
